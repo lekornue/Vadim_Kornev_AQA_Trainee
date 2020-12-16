@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class TestOne {
+public class FirstTest {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите число: \n");
+        System.out.print("Введите число: ");
         if (in.hasNextInt()) {
             int num = in.nextInt();
             System.out.printf("Вы ввели: %d \n", num);
@@ -13,7 +13,7 @@ public class TestOne {
                 in.close();
             }
         } else {
-            System.out.println("Вы ввели не число! \n");
+            System.out.println("Вы ввели не число! Либо число является не целочисленным. \n");
             System.out.print("Попробуйте ввести число: ");
             Scanner scanner = new Scanner(System.in);
             if (scanner.hasNextInt()) {

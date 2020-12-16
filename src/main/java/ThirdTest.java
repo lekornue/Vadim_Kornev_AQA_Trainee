@@ -1,4 +1,4 @@
-public class TestThree {
+public class ThirdTest {
     public static void main(String args[]) {
 
         int[] array = {12, 1, 33, -9, 102, 58};
