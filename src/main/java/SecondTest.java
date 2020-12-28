@@ -1,17 +1,16 @@
-import java.util.Scanner;
 
-public class SecondTest {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+public class SecondTest extends RunTests {
+
+    public static void secondTest() {
+
         System.out.print("Введите имя: ");
-        String Name = in.nextLine();
-        System.out.println("Вы ввели имя: " + Name);
-        in.close();
-        if (Name.equals("Вячеслав")) {
+        String name = scanner.nextLine().toLowerCase();
+        System.out.println("Вы ввели имя: " + name.substring(0,1).toUpperCase()+ name.substring(1).toLowerCase());
+        if (name.equals("вячеслав")) {
             System.out.println("Привет, Вячеслав");
-        }
-        else {
+        } else {
             System.out.println("Нет такого имени");
         }
+        System.out.println(" ");
     }
 }
